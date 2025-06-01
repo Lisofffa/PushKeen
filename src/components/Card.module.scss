@@ -1,0 +1,36 @@
+.wrapper {
+  backdrop-filter: blur(1.875rem);
+  box-shadow: 0px 0px 2.8687rem 0px var(--black-t25);
+  background-color: var(--white-t01);
+  padding: 0.9375rem 1.5625rem;
+  border-radius: 1.5625rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-height: 14.625rem;
+
+  &--active {
+    box-shadow: 0px 0px 2.8687rem 0px var(--red-ff);
+  }
+
+  &:hover {
+    backdrop-filter: unset;
+    background-color: var(--white);
+    box-shadow: 0px 0px 2.8687rem 0px var(--black-t25);
+  }
+}
+
+.title {
+  font-size: var(--fs-24-32);
+  font-weight: 400;
+  line-height: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text {
+  display: inline-block;
+  margin-top: 0.9375rem;
+  font-size: var(--fs-10-12);
+}

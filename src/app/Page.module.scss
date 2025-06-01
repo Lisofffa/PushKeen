@@ -1,0 +1,51 @@
+.main {
+  margin: 0 auto;
+  position: relative;
+  max-width: 98.5rem;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+.list {
+  width: 100%;
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(21.1875rem, 1fr));
+  gap: 3.75rem;
+}
+
+.img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 58.4375rem;
+  height: auto;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: -1;
+}
+
+@media (max-width: 75rem) {
+  .list {
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 1.25rem), 1fr));
+    gap: 2.5rem;
+    margin: 5rem auto;
+  }
+
+  .img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .list {
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 0.75rem), 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem auto;
+  }
+}
+
+@media (max-width: 30rem) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
